@@ -23,19 +23,21 @@ public class Usuario {
 	private long id;
 	
 	@NotNull
-	@Size(min = 2, max = 100)
+	@Size(max = 255)
 	private String nome;
 	
 	@NotNull
-	@Size(min = 2, max = 100)
+	@Size(max = 255)
 	private String usuario;
 	
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(max = 255)
 	private String senha;
 	
+	@Size(max = 255)
 	private String foto;
 	
+	@Size(max = 15)
 	private String tipo;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
