@@ -43,6 +43,8 @@ public class UsuarioService {
 				user.get().setFoto(usuario.get().getFoto());
 				user.get().setTipo(usuario.get().getTipo());
 				
+				user.get().setSenha(null); //apenas para não retornar a senha ao fazer o login. REFATORAR
+				
 				return user;
 			}
 		}
